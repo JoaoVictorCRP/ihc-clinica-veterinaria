@@ -3,3 +3,6 @@ run.sh
 
 # testing
 util.txt
+
+venv/*
+.cfg
