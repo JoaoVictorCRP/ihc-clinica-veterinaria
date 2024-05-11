@@ -1,0 +1,11 @@
+:root{
+    --cetacean-blue: #000E2B;
+    --indigo-dye: #00456Cff;
+    --redwood: #9D5754ff;
+    --champagne-pink: #EFE1D7ff;
+    --space-cadet: #2B273Eff;
+}
+
+html {
+    background: var(--cetacean-blue)
+}

@@ -1,4 +1,5 @@
 from flask import Flask, render_template
+import views
 
 app = Flask(__name__)
 app.config['DEBUG'] = True
