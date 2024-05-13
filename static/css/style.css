@@ -6,10 +6,17 @@
     --space-cadet: #2B273Eff;
 }
 
-html {
+body {
     background: var(--cetacean-blue)
 }
 
 .nav-link, .dropdown-item {
     font-size: 25px;
 }
+
+.container-lg{
+    max-width: 1600px;
+    background: #fff;
+}
+
+
