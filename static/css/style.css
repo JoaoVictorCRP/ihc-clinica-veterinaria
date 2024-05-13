@@ -9,3 +9,7 @@
 html {
     background: var(--cetacean-blue)
 }
+
+.nav-link, .dropdown-item {
+    font-size: 25px;
+}
