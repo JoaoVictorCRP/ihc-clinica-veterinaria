@@ -1,0 +1,15 @@
+input {
+    max-width: 400px;
+}
+
+label {
+    display: flex;
+}
+
+.sintomas {
+    max-width: calc(82%);
+}
+
+.submit {
+    margin: 15px;
+}

@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg ">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">
+    <a class="navbar-brand" href="/">
       <img src="../static/images/logo.png" alt="saude-animal-logo" width="100" height="100">
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -9,18 +9,25 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item icon-link-hover">
-          <a class="nav-link active" aria-current="page" href="#">Página Inicial</a>
+          <a class="nav-link active" aria-current="page" href="/">Página Inicial</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Agendar Consulta
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Cadastrar</a></li>
+            <li><a class="dropdown-item" href='{{ url_for('form_consulta') }}'>
+              <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+              Agendar agora</a>
+            </li>
             <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Whatsapp</a></li>
+            <li><a class="dropdown-item" href="https://api.whatsapp.com/send/?phone=55016993248125&text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20preciso%20agendar%20uma%20consulta%20para%20o%20meu%20pet.&type=phone_number&app_absent=0">
+              <i class="fa fa-whatsapp" aria-hidden="true"></i>  Whatsapp</a>
+            </li>
             <li><hr class="dropdown-divider"></li>
-            <li><p class="dropdown-item">Fone</p></li>
+            <li><a class="dropdown-item" href="tel:+5516993248125">
+              <i class="fa fa-phone-square" aria-hidden="true"></i> Fone: (16) 99324-8125</a>
+            </li>
           </ul>
         </li>
         <li class="nav-item">
