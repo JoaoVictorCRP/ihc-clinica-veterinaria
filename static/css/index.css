@@ -1,0 +1,19 @@
+.stats-section {
+    background-size: cover !important;
+    padding: 100px 0px 70px;
+}
+
+.stats-box {
+    text-align: center;
+}
+
+.stats-box h2 {
+    color: #FFF;
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+.stats-box h3 {
+    color: #FFF;
+    font-weight: 700;
+}
