@@ -1,10 +1,39 @@
+/* Banner  */
+
+section.banner-section {
+    background: var(--indigo-dye);
+    padding: 100px 0px;
+}
+
+.banner-text h1 {
+    color: #FFF;
+    font-size: 56px;
+    line-height: 68px;
+    margin-bottom: 20px;
+}
+
+.banner-text p {
+    color: #FFF;
+    font-size: 22px;
+    margin-bottom: 33px;
+}
+
+.banner-text {
+    max-width: 541px;
+}
+
+/* Dados */
+
 .stats-section {
     background-size: cover !important;
     padding: 100px 0px 70px;
+
 }
 
 .stats-box {
     text-align: center;
+    text-decoration: dashed;
+    font: #000;
 }
 
 .stats-box h2 {

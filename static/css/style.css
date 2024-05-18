@@ -21,7 +21,7 @@ body{
 
 /* Navbar  */
 .navbar {
-    background: var(--champagne-pink);
+    background: #FFF;
 }
 
 .nav-item, .dropdown-item {
@@ -37,28 +37,8 @@ header {
     background: var(--champagne-pink);
 }
 
-/* Banner  */
-
-section.banner-section {
-    background: var(--indigo-dye);
-    padding: 100px 0px;
-}
-
-.banner-text h1 {
-    color: #FFF;
-    font-size: 56px;
-    line-height: 68px;
-    margin-bottom: 20px;
-}
-
-.banner-text p {
-    color: #FFF;
+p{
     font-size: 22px;
-    margin-bottom: 33px;
-}
-
-.banner-text {
-    max-width: 541px;
 }
 
 .btn {
@@ -68,4 +48,9 @@ section.banner-section {
 
 .right-img {
     background: red;
+}
+
+/* Footer */
+footer {
+    background: var(--cetacean-blue);
 }
