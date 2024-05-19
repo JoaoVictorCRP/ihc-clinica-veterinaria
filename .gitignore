@@ -4,5 +4,7 @@ run.sh
 # testing
 util.txt
 
+# misc
 venv/*
 .cfg
+*.doc
