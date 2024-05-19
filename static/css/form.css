@@ -2,7 +2,7 @@ input {
     max-width: 400px;
 }
 
-label {
+label, .porte {
     display: flex;
 }
 
@@ -12,4 +12,13 @@ label {
 
 .submit {
     margin: 15px;
+}
+
+.input-sintomas {
+    margin-top: 10px;
+}
+
+.input-sintomas label {
+    font-weight: bolder;
+    font-size:22px
 }
