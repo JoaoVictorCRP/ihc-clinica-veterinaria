@@ -7,9 +7,9 @@ app.config['DEBUG'] = True
 def home():
     return render_template('index.html')
 
-@app.route('/agendar-consulta')
-def form_consulta():
-    return render_template('form-consulta.html')
+@app.route('/sobre-nos')
+def sobre():
+    return render_template('sobre.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
