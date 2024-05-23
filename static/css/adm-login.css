@@ -1,0 +1,52 @@
+:root{
+    --cetacean-blue: #000E2B;
+    --indigo-dye: #00456Cff;
+    --redwood: #9D5754ff;
+    --champagne-pink: #EFE1D7ff;
+    --space-cadet: #2B273Eff;
+}
+
+.divider:after,
+
+.divider:before {
+content: "";
+flex: 1;
+height: 1px;
+background: #eee;
+}
+
+.h-custom {
+height: calc(100% - 73px);
+}
+
+@media (max-width: 450px) {
+.h-custom {
+height: 100%;
+}
+}
+
+html {
+    font-size: 23px;
+}
+
+.btn {
+    background: var(--cetacean-blue);
+    color: #fff;
+    border: solid #fff;
+}
+
+.btn:hover {
+    background-color: #fff;
+    color: var(--cetacean-blue);
+    border: solid var(--cetacean-blue);
+}
+
+.cprt {
+    background: var(--cetacean-blue);
+    color: #fff;
+}
+
+.titulo {
+    font-weight: bold;
+}
+
