@@ -1,0 +1,7 @@
+1 - Main Navigation ( A navbar )
+http://www.welie.com/patterns/showPattern.php?patternID=main-navigation
+
+2 - Footer Sitemap ( O footer )
+http://www.welie.com/patterns/showPattern.php?patternID=sitemap-footer
+
+3 - 

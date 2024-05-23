@@ -5,11 +5,21 @@ document.addEventListener('DOMContentLoaded', function () {
     const sendChat = document.getElementById('send-chat');
     const chatInput = document.getElementById('chat-input');
     const chatBody = document.querySelector('.chat-body');
+    const agendarAgora = document.querySelector('.agendar-agora')
   
-    chatButton.addEventListener('click', () => { // Exibindo o chat
+    // Duas maneiras de exibir o chat: 
+    // 1 - clcar em "Agendar agora", no navbar:
+    agendarAgora.addEventListener('click', () => {
       chatWindow.style.display = 'flex';
+    })
+
+    // 2 - clicar no botãozinho do chat (funciona como um toggle)
+    chatButton.addEventListener('click', () => {
+      if(chatWindow.style.display == 'flex') {
+        return chatWindow.style.display = 'none'
+      }
+      return chatWindow.style.display = 'flex';
     });
-  
     closeChat.addEventListener('click', () => { // Fechando o chat
       chatWindow.style.display = 'none';
     });

@@ -10,7 +10,7 @@ body{
 	margin:0px;
 	padding:0px;
 	font-family: 'Poppins', sans-serif;
-	font-size:20px;
+	font-size:30px;
 	line-height:28px;
 }
 
@@ -40,7 +40,7 @@ body{
     position: fixed;
     bottom: 110px;
     right: 20px;
-    min-width: 400px;
+    min-width: calc(30%);
     background-color: white;
     border: 1px solid #ccc;
     border-radius: 8px;
@@ -91,10 +91,6 @@ body{
     background: #FFF;
 }
 
-.nav-item, .dropdown-item {
-    font-size: 25px;
-}
-
 img{
 	max-width:100%;
 }
@@ -112,10 +108,20 @@ p{
     background: red;
 }
 
+.dropdown-menu{
+    font-size: 30px;
+}
+
 /* Footer */
 footer {
     padding: 80px;
     color: #FFF;
+}
+
+.footer-menu h3 {
+    font-size: 40px;
+    font-weight: bold;
+    color: black;
 }
 
 .footer-menu ul {
@@ -126,13 +132,13 @@ footer {
 .footer-menu ul li{
     font-size: 20px;
     text-decoration: none;
-    color: #FFF;
     list-style: none;
 }
 
 .footer-menu ul li a{
-    color: #FFF;
-    text-decoration: none;
+    color: #fff;
+    font-size: 22px;
+    /* text-decoration: none; */
 }
 
 ul.footer-social {

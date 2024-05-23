@@ -14,12 +14,20 @@ section.banner-section {
 
 .banner-text p {
     color: #FFF;
-    font-size: 22px;
+    font-size: 30px;
     margin-bottom: 33px;
 }
 
 .banner-text {
-    max-width: 541px;
+    max-width:  750px;
+    letter-spacing: 1px;
+    /* height: calc(10%); */
+}
+
+
+/*  Equipe  */
+.team-img {
+    border: solid #FFF;
 }
 
 /* Dados */
