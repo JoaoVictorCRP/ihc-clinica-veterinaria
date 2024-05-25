@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de Pagamento - VetClin </title>
+    <link rel="icon" type="image/x-icon" href="./static/images/favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,400;1,500;1,600;1,800;1,900&display=swap" rel="stylesheet">	
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="./static/css/style.css" rel="stylesheet">
+    <link href="./static/css/pagamento.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"/>	
+</head>
+<body>
+    <header>
+        {% include './contents/navbar.html' %}
+    </header>
+    
+    <div class="container pag" style="padding-top: 100px;">
+        <h1 class="text-center">Política de Pagamento da Vetclin</h1>
+        <p>Na VetClin, estamos comprometidos em oferecer um serviço acessível e conveniente para todos os nossos clientes e seus pets. Para facilitar o processo de pagamento e garantir que você possa concentrar-se no que realmente importa — o bem-estar do seu animal de estimação — oferecemos várias opções flexíveis de pagamento.</p>
+
+        <h2 class="text-center">Opções de Pagamento</h2>
+        <ul>
+           <li>Pix</li>
+            <p> Para sua conveniência, aceitamos pagamentos via Pix, permitindo transferências rápidas e seguras diretamente de sua conta bancária para a clínica.</p>
+
+            <li>Cartão de Crédito e Débito</li>
+            <p>Aceitamos os principais cartões de crédito e débito. Os pagamentos com cartão devem ser realizados diretamente na maquininha da secretária, no momento da finalização da consulta.</p>
+        </ul>
+        <div class="text-center">
+            <img src="./static/images/pagamento/bandeiras.png"  class="img-pag">
+        </div>
+
+
+
+        <section class="cancelamento">
+            <h1 class="text-center">Pré-Pagamento</h1>
+            <p>Você tem a opção de pagar pela consulta antes de sua realização. Isso pode ser feito por Pix ou na clínica com seu cartão de crédito ou débito.</p>
+            <div class="text-center">
+                <img src="./static/images/pagamento/QR.png" style="height: 500px;" class="img-pag">
+            </div>
+            <h1 class="text-center">Política de Cancelamento</h1>
+            <p>
+                Entendemos que imprevistos acontecem e planos podem mudar. No entanto, é importante notar que, uma vez que o pagamento seja realizado, não oferecemos reembolsos em caso de cancelamento da consulta.
+                Aconselhamos que os pagamentos sejam feitos preferencialmente após a realização dos serviços para evitar inconvenientes em caso de mudanças de última hora.
+            </p>
+        </section>
+    </div>
+    {% include './contents/chat-secretaria.html' %}
+
+    <footer class="dark">
+        {% include './contents/footer.html'%}
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="./static/js/script.js"></script>
+
+</body>
+</html>

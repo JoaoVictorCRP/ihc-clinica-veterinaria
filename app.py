@@ -12,6 +12,10 @@ def home():
 def sobre():
     return render_template('sobre.html')
 
+@app.route('/pagamento')
+def info_pagamento():
+    return render_template('pagamento.html')
+
 # Versão Secretária/Veterinário
 @app.route('/adm-login', methods =['POST',  'GET'])
 def adm():
