@@ -15,9 +15,41 @@ body{
 }
 
 .dark {
-    background: var(--indigo-dye);
+    background: var(--cetacean-blue);
     color: #FFF;
 }
+
+/* Navbar  */
+.navbar {
+    position: fixed;
+    top: 0;
+    background: #FFF;
+    width: 100%;
+    z-index: 1000;
+    /* border-bottom: solid black; */
+}
+
+img{
+	max-width:100%;
+}
+
+p{
+    font-size: 22px;
+}
+
+.btn {
+    font-size: 16px;
+    padding: 10px 22px;
+}
+
+.right-img {
+    background: red;
+}
+
+.dropdown-menu{
+    font-size: 30px;
+}
+
 
 /* Chat */
 .chat-button {
@@ -39,6 +71,7 @@ body{
 .chat-window {
     position: fixed;
     bottom: 110px;
+    z-index: 1001;
     right: 20px;
     min-width: calc(30%);
     background-color: white;
@@ -86,32 +119,6 @@ body{
     cursor: pointer;
 }
 
-/* Navbar  */
-.navbar {
-    background: #FFF;
-}
-
-img{
-	max-width:100%;
-}
-
-p{
-    font-size: 22px;
-}
-
-.btn {
-    font-size: 16px;
-    padding: 10px 22px;
-}
-
-.right-img {
-    background: red;
-}
-
-.dropdown-menu{
-    font-size: 30px;
-}
-
 /* Footer */
 footer {
     padding: 80px;
@@ -121,7 +128,7 @@ footer {
 .footer-menu h3 {
     font-size: 40px;
     font-weight: bold;
-    color: black;
+    color: #FFF;
 }
 
 .footer-menu ul {

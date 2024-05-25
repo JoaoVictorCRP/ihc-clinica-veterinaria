@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const agendarAgora = document.querySelector('.agendar-agora')
   
     // Duas maneiras de exibir o chat: 
+
     // 1 - clcar em "Agendar agora", no navbar:
     agendarAgora.addEventListener('click', () => {
       chatWindow.style.display = 'flex';
@@ -40,4 +41,8 @@ document.addEventListener('DOMContentLoaded', function () {
         sendChat.click();
       }
     });
+  
+
+    // Permanecer a navbar ao scrollar:
+    
   });
