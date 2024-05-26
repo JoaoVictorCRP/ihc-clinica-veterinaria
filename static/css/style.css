@@ -149,7 +149,11 @@ footer {
 .footer-menu ul li a{
     color: #fff;
     font-size: 22px;
-    /* text-decoration: none; */
+    text-decoration: none;
+}
+
+.footer-menu ul li a:hover {
+    color: #bba7a7;
 }
 
 ul.footer-social {
