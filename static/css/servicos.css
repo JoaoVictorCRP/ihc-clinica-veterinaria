@@ -1,0 +1,44 @@
+section.banner-section-dark {
+    background: var(--cetacean-blue);
+    padding: 100px 0px;
+}
+
+section.banner-section {
+    background: #FFF;
+    padding: 100px 0px;
+}
+
+.banner-text-dark h1 {
+    color: #FFF;
+    font-size: 56px;
+    line-height: 68px;
+    margin-bottom: 20px;
+}
+
+.banner-text h1 {
+    color: var(--cetacean-blue);
+    font-size: 56px;
+    line-height: 68px;
+    margin-bottom: 20px;
+}
+
+.banner-text-dark p {
+    color: #FFF;
+    font-size: 30px;
+    margin-bottom: 33px;
+}
+
+.banner-text p {
+    color: var(--cetacean-blue);
+    font-size: 30px;
+    margin-bottom: 33px;
+}
+
+.banner-text {
+    max-width:  750px;
+    letter-spacing: 1px;
+}
+
+.servicos-img {
+    border-radius: 20px;
+}

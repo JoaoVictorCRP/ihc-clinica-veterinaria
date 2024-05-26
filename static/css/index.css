@@ -1,5 +1,4 @@
 /* Banner  */
-
 section.banner-section {
     background: var(--cetacean-blue);
     padding: 100px 0px;
@@ -21,7 +20,12 @@ section.banner-section {
 .banner-text {
     max-width:  750px;
     letter-spacing: 1px;
-    /* height: calc(10%); */
+}
+
+.btn {
+    width: 100%;
+    font-weight: bold;
+    font-size: 22px;
 }
 
 
@@ -31,7 +35,6 @@ section.banner-section {
 }
 
 /* Dados */
-
 .stats-section {
     background-size: cover !important;
     padding: 100px 0px 70px;
