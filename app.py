@@ -20,6 +20,10 @@ def info_pagamento():
 def servicos():
     return render_template('servicos.html')
 
+@app.route('/privacidade')
+def privacidade():
+    return render_template('privacidade.html')
+
 # Versão Secretária/Veterinário
 @app.route('/adm-login', methods =['POST',  'GET'])
 def adm():

@@ -19,6 +19,11 @@ body{
     font-size: 65px;
 }
 
+.subtitle {
+    padding-top: 25px;
+    font-size: 52px;
+}
+
 .dark {
     background: var(--cetacean-blue);
     color: #FFF;
