@@ -34,6 +34,7 @@ def adm():
 
         print(user, password)
         if user and password: # Obviamente, teríamos uma validação no BD aqui, mas como é um protótipo, isso não é necessário.
+            # TODO: ROTA SEPARADA APÓS TER LOGADO (URL_FOR)
             return render_template ('adm-painel.html', user=user)
 
     return render_template('adm-login.html')

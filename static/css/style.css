@@ -202,3 +202,11 @@ ul.footer-social li a:hover {
     background: var(--cetacean-blue);
     color: #FFF;
 }
+
+.bullet-footer{
+    word-spacing: 2px;
+}
+
+.bullet-footer li {
+    padding:5px;
+}
