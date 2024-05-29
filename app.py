@@ -29,15 +29,20 @@ def privacidade():
 def adm():
 
     if request.method == 'POST':
-        user = request.form['username']        
+        username = request.form['username']        
         password = request.form['password']
 
-        print(user, password)
-        if user and password: # Obviamente, teríamos uma validação no BD aqui, mas como é um protótipo, isso não é necessário.
+        # print(username, password)
+        if username and password: # Obviamente, teríamos uma validação no BD aqui, mas como é um protótipo, isso não é necessário.
             # TODO: ROTA SEPARADA APÓS TER LOGADO (URL_FOR)
-            return render_template ('adm-painel.html', user=user)
+            return redirect(url_for('adm_painel', username=username))
 
     return render_template('adm-login.html')
+
+@app.route('/painel-administrativo')
+def adm_painel():
+    username = request.args.get('username')
+    return render_template('adm-painel.html', user=username)
 
 if __name__ == '__main__':
     app.run(debug=True)

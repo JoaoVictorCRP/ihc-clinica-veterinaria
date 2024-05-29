@@ -1,0 +1,11 @@
+/* Barra lateral */
+.sidebar-link {
+    color: #333; /* Cor do texto */
+    border-bottom: 1px solid #ccc; /* Divisória entre itens */
+    text-decoration: none; /* Remove o sublinhado */
+}
+
+.sidebar-link:hover {
+    background-color: #f8f9fa; /* Cor de fundo ao passar o mouse */
+    color: #0056b3; /* Cor do texto ao passar o mouse */
+}
