@@ -29,12 +29,11 @@ def privacidade():
 def adm():
 
     if request.method == 'POST':
+        global username
         username = request.form['username']        
         password = request.form['password']
 
-        # print(username, password)
         if username and password: # Obviamente, teríamos uma validação no BD aqui, mas como é um protótipo, isso não é necessário.
-            # TODO: ROTA SEPARADA APÓS TER LOGADO (URL_FOR)
             return redirect(url_for('adm_painel', username=username))
 
     return render_template('adm-login.html')
@@ -46,7 +45,8 @@ def adm_painel():
 
 @app.route('/chat')
 def adm_chat():
-    return render_template('adm-chat.html')
+    return render_template('adm-chat.html', user=username)
+
 
 
 if __name__ == '__main__':

@@ -1,6 +1,6 @@
 
 .chat-container {
-    margin-left: calc(100vh - 700px);
+    margin-left: 25%;
 }
 .chat-list {
     overflow-y: auto;
@@ -22,11 +22,28 @@
     height: calc(100vh - 100px); /* Adjust height */
     display: flex;
     flex-direction: column;
+    /* background: red; */
+    max-width: calc(100vh - 200px);
 }
 
 .chat-messages {
     flex-grow: 1;
     overflow-y: auto;
+    background-color: #f8f9fa; /* Light grey background */
+}
+
+.chat-messages div {
+    margin: 5px;
+    margin-bottom: 8px;
+    padding: 10px;
+    background-color: #e9ecef;
+    border-radius: 10px;
+    max-width: 75%;
+    font-size: 20px
+}
+
+.input-group textarea {
+    resize: none; /* Disable textarea resizing */
 }
 
 .chat-form textarea {
