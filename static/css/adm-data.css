@@ -1,0 +1,30 @@
+.table {
+    border-collapse: collapse;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.table th, .table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    font-size: 22px;
+    vertical-align: middle; /* Alinha o texto e os botões verticalmente */
+}
+
+.table th {
+    background-color: #f8f9fa;
+}
+
+.table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+.table th {
+    background-color: #f8f9fa;
+}
+
+.table .btn-sm {
+    padding: 0.45rem 0.6rem; /* Reduz o padding dos botões para torná-los menores */
+    font-size: 0.975rem; /* Tamanho da fonte adequado para botões pequenos */
+}
+

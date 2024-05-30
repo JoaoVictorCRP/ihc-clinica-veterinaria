@@ -47,6 +47,9 @@ def adm_painel():
 def adm_chat():
     return render_template('adm-chat.html', user=username)
 
+@app.route('/pets')
+def adm_petsData():
+    return render_template('adm-petsData.html', user=username)
 
 
 if __name__ == '__main__':

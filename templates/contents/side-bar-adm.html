@@ -10,7 +10,7 @@
           <a href="#" class="list-group-item list-group-item-action p-3 sidebar-link">
             <i class="fa fa-calendar" aria-hidden="true"></i><span> Consultas</span>
           </a>
-          <a href="#" class="list-group-item list-group-item-action p-3 sidebar-link">
+          <a href="/pets" class="list-group-item list-group-item-action p-3 sidebar-link">
             <i class="fa fa-paw" aria-hidden="true"></i><span> Pets</span>
           </a>
           <a href="#" class="list-group-item list-group-item-action p-3 sidebar-link">
@@ -95,18 +95,18 @@
             >
             <i class="fa fa-user-circle-o" aria-hidden="true"></i>
             </a>
-            <ul
-              class="dropdown-menu dropdown-menu-end"
-              aria-labelledby="navbarDropdownMenuLink"
-            >
+
+            <ul class="dropdown-menu dropdown-menu-end">
               <li>
                 <p>Usuário Logado: {{ user }}</p>
               </li>
+              
               <li>
                 <a class="dropdown-item" href="#">Configurações</a>
               </li>
+
               <li>
-                <a class="dropdown-item" href="#">Sair</a>
+                <a class="dropdown-item" href="/adm-login">Sair</a>
               </li>
             </ul>
           </li>
