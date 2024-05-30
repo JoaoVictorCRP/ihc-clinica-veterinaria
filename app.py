@@ -1,4 +1,5 @@
 from flask import Flask, render_template, request, url_for, redirect
+import pandas as pd
 
 app = Flask(__name__)
 app.config['DEBUG'] = True
@@ -49,7 +50,10 @@ def adm_chat():
 
 @app.route('/pets')
 def adm_petsData():
-    return render_template('adm-petsData.html', user=username)
+    pets = pd.read_csv('./static/data/pets.csv') # Lendo csv de dados
+    pets = pets.to_dict(orient='records') # convertendo em lista de dicionários
+
+    return render_template('adm-petsData.html', user=username, pets=pets)
 
 
 if __name__ == '__main__':

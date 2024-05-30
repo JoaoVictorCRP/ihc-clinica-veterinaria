@@ -28,3 +28,27 @@
     font-size: 0.975rem; /* Tamanho da fonte adequado para botões pequenos */
 }
 
+.search-div{
+    display: flex;
+    justify-content: center;
+}
+
+#searchBox {
+    font-size: 22px;
+    border-radius: 15px;
+    width: 50%
+}
+
+#lupa{
+    margin-left: 5px;
+    font-size: 25px;
+    background: blueviolet;
+    border-radius: 20px;
+    max-height: 45px;
+    width: 45px;
+    cursor: pointer;
+}
+
+#lupa:hover{
+    background: rgb(90, 14, 161);  /* FIXME - Colocar na cor da empresa */
+}

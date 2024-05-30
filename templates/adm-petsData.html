@@ -16,6 +16,15 @@
 
   <div class="container mt-5">
     <h2 class="text-center mb-4">Pets Registrados</h2>
+
+      
+    <div class="text-center search-div">
+        <input type="text" class="text-center mb-4" placeholder="Buscar Pet" id="searchBox">
+        <div id="lupa" class="">
+            <i class="fa fa-search" aria-hidden="true" ></i>
+        </div>
+    </div>
+    
     <table class="table table-hover">
         <thead>
             <tr>
@@ -30,20 +39,22 @@
             </tr>
         </thead>
         <tbody>
-            <!-- Linha 1-->
-            <tr>
-                <td>1</td>
-                <td>Jade</td>
-                <td>Indefinida/Vira-Lata</td>
-                <td>Caramelo</td>
-                <td>Médio</td>
-                <td>João Silva</td>
-                <td>01/01/2018</td>
-                <td>
-                    <button class="btn btn-primary btn-sm me-2">Editar</button>
-                    <button class="btn btn-danger btn-sm">Excluir</button>
-                </td>
-            </tr>
+
+           {% for pet in pets %}
+                <tr>
+                    <td>{{ pet['ID'] }}</td>
+                    <td>{{ pet['Nome'] }}</td>
+                    <td>{{ pet['Raca'] }}</td>
+                    <td>{{ pet['Cor'] }}</td>
+                    <td>{{ pet['Porte'] }}</td>
+                    <td>{{ pet['Dono(a)'] }}</td>
+                    <td>{{ pet['Data_Nascimento'] }}</td>
+                    <td>
+                        <button class="btn btn-primary btn-sm me-2">Editar</button>
+                        <button class="btn btn-danger btn-sm">Excluir</button>
+                    </td>
+                </tr>
+            {% endfor %}
         </tbody>
     </table>
 </div>

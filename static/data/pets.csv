@@ -1,1 +1,12 @@
-ID,Nome,Cor,Porte,Dono(a),DataNascimento,
+ID,Nome,Raca,Cor,Porte,Dono(a),Data_Nascimento,
+1,Luna,Labrador,Branco,Médio,João Victor Carrijo,02/12/2018
+2,Max,Beagle,Preto,Pequeno,Maria Gonçalves,01/04/2022
+3,Bella,Poodle,Caramelo,Pequeno,Roberto Souza,14/10/2023
+4,Charlie,Pug,Castanho,Médio,Fernanda Lima,09/01/2016
+5,Daisy,Border Collie,Preto/Branco,Grande,Maria Eduarda Soares,25/11/2017
+6,Don,Golden,Dourado,Grande,Leonardo Henrique Gomes,24/07/2015
+7,Stella,Chihuahua,Caramelo,Pequeno,Eloísa Rodrigues,02/03/2024
+8,Terror,Bulldog,Preto,Grande,Wiliam Branco Lopes,25/10/2013
+9,Yoshi,Pitbull,Castanho,Grande,Maxwell Paim,30/08/2018
+10,Marquim,Daschund,Preto,Pequeno,Raul Rodrigues,20/09/2020
+11,Cana-Brava,Rottweiler,Preto,Grande,Guilherme Pereira,11/10/2014
