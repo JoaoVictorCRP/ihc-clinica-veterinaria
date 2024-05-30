@@ -24,7 +24,7 @@ def servicos():
 def privacidade():
     return render_template('privacidade.html')
 
-# Versão Secretária/Veterinário
+# Versão Administrativa
 @app.route('/adm-login', methods =['POST',  'GET'])
 def adm():
 
@@ -43,6 +43,11 @@ def adm():
 def adm_painel():
     username = request.args.get('username')
     return render_template('adm-painel.html', user=username)
+
+@app.route('/chat')
+def adm_chat():
+    return render_template('adm-chat.html')
+
 
 if __name__ == '__main__':
     app.run(debug=True)
