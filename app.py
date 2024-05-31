@@ -53,14 +53,14 @@ def adm_petsData():
     pets = pd.read_csv('./static/data/pets.csv') # Lendo csv de dados
     pets = pets.to_dict(orient='records') # convertendo em lista de dicionários
 
-    return render_template('adm-petsData.html', user=username, pets=pets)
+    return render_template('adm-dataPets.html', user=username, pets=pets)
 
 @app.route('/clientes')
 def adm_clientesData():
     clientes = pd.read_csv('./static/data/clientes.csv')
     clientes = clientes.to_dict(orient='records')
 
-    return render_template('adm-clientesData.html', user=username, clientes=clientes)
+    return render_template('adm-dataClientes.html', user=username, clientes=clientes)
 
 
 if __name__ == '__main__':
