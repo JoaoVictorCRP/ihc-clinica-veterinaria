@@ -1,4 +1,11 @@
-/* Barra lateral */
+:root{
+  --cetacean-blue: #000E2B;
+  --indigo-dye: #00456Cff;
+  --redwood: #9D5754ff;
+  --champagne-pink: #EFE1D7ff;
+  --space-cadet: #2B273Eff;
+}
+
 body {
     background-color: #fbfbfb;
   }
@@ -8,42 +15,42 @@ body {
     }
   }
   
-  /* Sidebar */
-  .sidebar {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    padding: 58px 0 0; /* Height of navbar */
-    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 5%), 0 2px 10px 0 rgb(0 0 0 / 5%);
-    width: 240px;
-    z-index: 600;
-  }
-  
-  @media (max-width: 991.98px) {
-    .sidebar {
-      width: 100%;
-    }
-  }
-  .sidebar .active {
-    border-radius: 5px;
-    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
-  }
-  
-  .sidebar-sticky {
-    position: relative;
-    top: 0;
-    height: calc(100vh - 48px);
-    padding-top: 0.5rem;
-    overflow-x: hidden;
-    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
-  }
+/* Barra lateral */
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  padding: 58px 0 0; /* Height of navbar */
+  box-shadow: 0 2px 5px 0 rgb(0 0 0 / 5%), 0 2px 10px 0 rgb(0 0 0 / 5%);
+  width: 240px;
+  z-index: 600;
+}
 
-  .central {
-    display: fixed;
-    align-items: center;
-    justify-content: center;
+@media (max-width: 991.98px) {
+  .sidebar {
+    width: 100%;
   }
+}
+.sidebar .active {
+  border-radius: 5px;
+  box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+}
+
+.sidebar-sticky {
+  position: relative;
+  top: 0;
+  height: calc(100vh - 48px);
+  padding-top: 0.5rem;
+  overflow-x: hidden;
+  overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+}
+
+.central {
+  display: fixed;
+  align-items: center;
+  justify-content: center;
+}
 
 .sidebar-link {
     color: #333; /* Cor do texto */
@@ -53,5 +60,5 @@ body {
 
 .sidebar-link:hover {
     background-color: #f8f9fa; /* Cor de fundo ao passar o mouse */
-    color: #0056b3; /* Cor do texto ao passar o mouse */
+    color: cadetblue; /* Cor do texto ao passar o mouse */
 }

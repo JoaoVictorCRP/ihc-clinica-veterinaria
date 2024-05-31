@@ -1,15 +1,19 @@
 .table {
-    border-collapse: collapse;
     width: 100%;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.table, th, td, tr {
+    border: 1px solid black;
+    border-collapse: collapse;
 }
 
 .table th, .table td {
     padding: 12px;
     text-align: left;
     border-bottom: 1px solid #ddd;
-    font-size: 22px;
-    vertical-align: middle; /* Alinha o texto e os botões verticalmente */
+    font-size: 20px;
+    vertical-align: middle;
 }
 
 .table th {
@@ -24,8 +28,8 @@
 }
 
 .table .btn-sm {
-    padding: 0.45rem 0.6rem; /* Reduz o padding dos botões para torná-los menores */
-    font-size: 0.975rem; /* Tamanho da fonte adequado para botões pequenos */
+    padding: 0.45rem 0.6rem;
+    font-size: 0.975rem; 
 }
 
 .search-div{
@@ -42,13 +46,13 @@
 #lupa{
     margin-left: 5px;
     font-size: 25px;
-    background: blueviolet;
+    color: #fff;
     border-radius: 20px;
-    max-height: 45px;
+    max-height: 42px;
     width: 45px;
     cursor: pointer;
 }
 
 #lupa:hover{
-    background: rgb(90, 14, 161);  /* FIXME - Colocar na cor da empresa */
+    background: var(--space-cadet);  /* FIXME - Colocar na cor da empresa */
 }

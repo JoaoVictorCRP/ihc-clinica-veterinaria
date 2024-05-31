@@ -55,6 +55,13 @@ def adm_petsData():
 
     return render_template('adm-petsData.html', user=username, pets=pets)
 
+@app.route('/clientes')
+def adm_clientesData():
+    clientes = pd.read_csv('./static/data/clientes.csv')
+    clientes = clientes.to_dict(orient='records')
+
+    return render_template('adm-clientesData.html', user=username, clientes=clientes)
+
 
 if __name__ == '__main__':
     app.run(debug=True)
