@@ -60,3 +60,9 @@ body {
     background-color: #f8f9fa; /* Cor de fundo ao passar o mouse */
     color: cadetblue; /* Cor do texto ao passar o mouse */
 }
+
+.privilegio {
+  font-size: 12px;
+  margin-left: 20px;
+  top: 10px;
+}

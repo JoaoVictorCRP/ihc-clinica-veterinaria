@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request, url_for, redirect
 import pandas as pd
+from users import usuarios # Dados de acesso
 
 app = Flask(__name__)
 app.config['DEBUG'] = True
@@ -34,15 +35,17 @@ def adm():
         username = request.form['username']        
         password = request.form['password']
 
-        if username and password: # Obviamente, teríamos uma validação no BD aqui, mas como é um protótipo, isso não é necessário.
-            return redirect(url_for('adm_painel', username=username))
+        if (username in usuarios) and password==usuarios[username][0]:
+            privilegio = 'Atendente' if usuarios[username][1] == 'a' else 'Veterinária(o)'
+            return redirect(url_for('adm_painel', user=username, privilegio=privilegio))
 
     return render_template('adm-login.html')
 
 @app.route('/painel-administrativo')
 def adm_painel():
-    username = request.args.get('username')
-    return render_template('adm-painel.html', user=username)
+    user = request.args.get('user')
+    privilegio = request.args.get('privilegio')
+    return render_template('adm-painel.html', user=user, privilegio=privilegio)
 
 @app.route('/chat')
 def adm_chat():

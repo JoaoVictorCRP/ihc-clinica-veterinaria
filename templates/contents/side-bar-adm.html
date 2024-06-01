@@ -14,27 +14,45 @@
           <a href="/consultas" class="list-group-item list-group-item-action p-3 sidebar-link">
             <i class="fa fa-calendar" aria-hidden="true"></i><span> Consultas</span>
           </a>
-          <a href="/pets" class="list-group-item list-group-item-action p-3 sidebar-link">
-            <i class="fa fa-paw" aria-hidden="true"></i><span> Pets</span>
-          </a>
-          <a href="/clientes" class="list-group-item list-group-item-action p-3 sidebar-link">
-            <i class="fa fa-user" aria-hidden="true"></i><span> Clientes</span>
-          </a>
-          <a href="/chat" class="list-group-item list-group-item-action p-3 sidebar-link">
-            <i class="fa fa-commenting" aria-hidden="true"></i><span> Chat</span>
-          </a>
-          <a href="#" class="list-group-item list-group-item-action p-3 sidebar-link">
-            <i class="fa fa-user-md" aria-hidden="true"></i><span> Veterinários</span>
-          </a>
+
+          <!-- Diferenciação de acesso: Atendente vs. Veterinário -->
+          {% if privilegio == 'Atendente' %}
+              <a href="/pets" class="list-group-item list-group-item-action p-3 sidebar-link">
+                <i class="fa fa-paw" aria-hidden="true"></i><span> Pets</span>
+              </a>
+              <a href="/clientes" class="list-group-item list-group-item-action p-3 sidebar-link">
+                <i class="fa fa-user" aria-hidden="true"></i><span> Clientes</span>
+              </a>
+              <a href="/chat" class="list-group-item list-group-item-action p-3 sidebar-link">
+                <i class="fa fa-commenting" aria-hidden="true"></i><span> Chat</span>
+              </a>
+              <a href="#" class="list-group-item list-group-item-action p-3 sidebar-link">
+                <i class="fa fa-user-md" aria-hidden="true"></i><span> Veterinários</span>
+              </a>
+
+          {% else %}
+            <a href="#" class="list-group-item list-group-item-action p-3 sidebar-link">
+              <i class="fa fa-medkit" aria-hidden="true"></i><span> Exames</span>
+            </a>
+          {% endif %}
+
+
         </div>
       </div>
 
 
       <div class="position-absolute bottom-0 start-0">
         <div class="list-group list-group-flush mx-3 mt-4">
-          <a href="#" class="list-group-item list-group-item-action p-3 sidebar-link">
+          
+          <div class="list-group-item list-group-item-action p-3">
+            <p class="privilegio position-absolute translate-middle-y"> {{privilegio}}</p>
+            <i class="fa fa-user-circle-o" aria-hidden="true"></i> {{ user }}
+          </div>
+
+          <a href="/configuracoes" class="list-group-item list-group-item-action p-3 sidebar-link">
             <i class="fa fa-cog" aria-hidden="true"></i><span> Configurações</span>
           </a>
+
           <a href="/adm-login" class="list-group-item list-group-item-action p-3 sidebar-link">
             <i class="fa fa-sign-out" aria-hidden="true"></i><span> Sair</span>
           </a>
