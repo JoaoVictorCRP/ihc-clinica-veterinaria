@@ -1,0 +1,30 @@
+h2 a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+h2 a:hover {
+    font-size: 26px;
+}
+
+.calendar {
+    margin-left: 10%;
+}
+
+.calendar .d-flex > div {
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    min-height: 110px;
+}
+
+.calendar ul {
+    padding: 0;
+    margin-top: 10px;
+    list-style-type: none;
+}
+
+.calendar li {
+    font-size: 0.9em;
+    color: #000;
+}

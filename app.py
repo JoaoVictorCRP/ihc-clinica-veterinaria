@@ -62,6 +62,9 @@ def adm_clientesData():
 
     return render_template('adm-dataClientes.html', user=username, clientes=clientes)
 
+@app.route('/consultas')
+def adm_consultas():
+    return render_template('adm-consultas.html', user=username)
 
 if __name__ == '__main__':
     app.run(debug=True)
