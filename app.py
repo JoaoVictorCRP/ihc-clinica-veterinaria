@@ -36,38 +36,41 @@ def adm():
         password = request.form['password']
 
         if (username in usuarios) and password==usuarios[username][0]:
+            global privilegio
             privilegio = 'Atendente' if usuarios[username][1] == 'a' else 'Veterinária(o)'
-            return redirect(url_for('adm_painel', user=username, privilegio=privilegio))
+            return redirect(url_for('adm_painel', username=username, privilegio=privilegio))
 
     return render_template('adm-login.html')
 
 @app.route('/painel-administrativo')
 def adm_painel():
-    user = request.args.get('user')
-    privilegio = request.args.get('privilegio')
-    return render_template('adm-painel.html', user=user, privilegio=privilegio)
+    return render_template('adm-painel.html', user=username, privilegio=privilegio)
 
 @app.route('/chat')
 def adm_chat():
-    return render_template('adm-chat.html', user=username)
+    return render_template('adm-chat.html', user=username, privilegio=privilegio)
 
 @app.route('/pets')
 def adm_petsData():
     pets = pd.read_csv('./static/data/pets.csv') # Lendo csv de dados
     pets = pets.to_dict(orient='records') # convertendo em lista de dicionários
 
-    return render_template('adm-dataPets.html', user=username, pets=pets)
+    return render_template('adm-dataPets.html', user=username, pets=pets, privilegio=privilegio)
 
 @app.route('/clientes')
 def adm_clientesData():
     clientes = pd.read_csv('./static/data/clientes.csv')
     clientes = clientes.to_dict(orient='records')
 
-    return render_template('adm-dataClientes.html', user=username, clientes=clientes)
+    return render_template('adm-dataClientes.html', user=username, clientes=clientes, privilegio=privilegio)
 
 @app.route('/consultas')
 def adm_consultas():
-    return render_template('adm-consultas.html', user=username)
+    return render_template('adm-consultas.html', user=username, privilegio=privilegio)
+
+@app.route('/configuracoes')
+def adm_configs():
+    return render_template('adm-configs.html', user=username, privilegio=privilegio, usuarios=usuarios)
 
 if __name__ == '__main__':
     app.run(debug=True)

@@ -12,12 +12,4 @@ usuarios = {
     'amanda.santos':['1234', 'v'],
     'leticia.franca':['1234','v']
 }
-
-def valida_login(user, senha):
-    username = usuarios[user]
-    if username:
-        if username[0]==senha:
-            return
-        return 'Senha Incorreta'
-    return 'Usuário não existe'
     

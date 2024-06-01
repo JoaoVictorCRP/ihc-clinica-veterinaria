@@ -1,0 +1,73 @@
+/* Ajustes gerais para o layout da página de configurações */
+.container {
+    margin-left: 220px; /* Ajuste conforme a largura da sua sidebar */
+    padding: 20px;
+}
+
+/* Estilização dos formulários de usuário */
+.user-settings input,
+.user-settings button {
+    width: 30%;
+    margin-top: 5px;
+}
+
+.user-settings button {
+    background-color: var(--indigo-dye);
+    color: white;
+    border: none;
+}
+
+.user-settings button:hover {
+    background-color: var(--cetacean-blue);
+}
+
+/* Estilização da lista de usuários */
+.list-group-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    margin-top: 5px;
+}
+
+/* Botões de editar e excluir */
+.btn-edit,
+.btn-delete {
+    padding: 5px 10px;
+    margin-left: 10px;
+}
+
+.btn-edit {
+    background-color: #ffc107;
+    color: black;
+}
+
+.btn-delete {
+    background-color: #dc3545;
+    color: white;
+}
+
+.btn-edit:hover {
+    background-color: #e0a800;
+}
+
+.btn-delete:hover {
+    background-color: #c82333;
+}
+
+/* Estilização das configurações adicionais */
+.other-settings .form-check {
+    margin-top: 15px;
+}
+
+.other-settings .form-check-label {
+    margin-left: 10px;
+}
+
+/* Responsividade */
+@media (max-width: 991px) {
+    .container {
+        margin-left: 0;
+    }
+}
