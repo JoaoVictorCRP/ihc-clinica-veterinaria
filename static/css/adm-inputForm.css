@@ -1,9 +1,9 @@
 form {
-    font-size: 26px;
+    font-size: 24px;
 }
 
 .data-input {
-    font-size: 22px;
+    font-size: 18px;
 }
 
 input::-webkit-outer-spin-button,
@@ -21,4 +21,19 @@ input::-webkit-inner-spin-button { /* Remove as setinhas do input de número */
 
 .actions button {
     font-size: 25px;
+}
+
+.read-only {
+    background-color: #e9ecef;
+    color: #495057;
+    cursor: not-allowed;
+}
+
+.data-input:read-only {
+    background-color: #f8f9fa;
+    color: #6c757d;
+}
+
+.form-control:focus {
+    box-shadow: none; /* Remove o glow ao focar nos campos somente leitura */
 }

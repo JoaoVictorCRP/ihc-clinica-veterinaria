@@ -49,7 +49,7 @@
 
             {% for pet in pets %}
                     <tr>
-                        <td><input type="checkbox" style="width:60px; height:40px"></td>
+                        <td><input type="checkbox" style="width:60px; height:40px" class="chk-action"></td>
                         <td>{{ pet['Nome'] }}</td>
                         <td>{{ pet['Raca'] }}</td>
                         <td>{{ pet['Cor'] }}</td>
@@ -65,5 +65,25 @@
             </tbody>
         </table>
     </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            let checks = document.querySelectorAll('.chk-action');
+            let deleteBtn = document.querySelector('.delete');
+        
+            checks.forEach(check => {
+                check.addEventListener('change', function() {
+                    const isAnyChecked = Array.from(checks).some(c => c.checked);
+                    deleteBtn.style.opacity = isAnyChecked ? '1' : '0.5';
+                    if (isAnyChecked) {
+                        deleteBtn.classList.add('enabled');
+                        deleteBtn.disabled = false;
+                    } else {
+                        deleteBtn.classList.remove('enabled');
+                        deleteBtn.disabled = true;
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 </html>

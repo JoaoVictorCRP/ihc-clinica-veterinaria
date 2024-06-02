@@ -15,7 +15,7 @@
     {% include './contents/side-bar-adm.html' %}
     <h1 class="text-center mt-3">Adicionar Novo Registro </h1>
     <div class="container mt-5 me-5" style="width: 80%;">
-        <form>
+        <form method="post">
             <!-- Dados Gerais -->
             <div class="row align-items-start">
                 <div class="col form-group">
@@ -29,18 +29,18 @@
                 </div>
 
                 <div class="col form-group">
-                    <label for="ownerName">Nome do Dono(a)</label>
+                    <label for="ownerName" class="new-label">Nome do Dono(a)</label>
                     <input type="text" class="form-control data-input" placeholder="Nome do Dono" id="ownerName">
                 
-                    <label for="ownerBirth">CPF</label>
-                    <input type="text" class="form-control data-input" id="cpf">
+                    <label for="cpf" class="new-label">CPF</label>
+                    <input type="text" class="form-control data-input" id="cpf" placeholder="CPF">
 
-                    <label for="ownerBirth">Data de Nascimento do Dono</label>
+                    <label for="ownerBirth" class="new-label">Data de Nascimento do Dono</label>
                     <input type="date" class="form-control data-input" id="ownerBirth">
 
-                    <div class="form-group" id="ownerExists" >
-                        <input type="checkbox" style="width:23px; height:23px"> Dono já está registrado
-                        <input type="text" id="existantOwnerName" class="form-control data-input" style="display: none;">
+                    <div class="form-group">
+                        <input type="checkbox" style="width:23px; height:23px" id="ownerExists"> Dono já está registrado
+                        <input type="text" id="existantOwnerName" class="form-control data-input" placeholder="Nome ou CPF do dono" style="display: none;">
                       </div>
                 </div>
 
@@ -91,5 +91,33 @@
             </div>
           </form>
     </div>
+    <script>
+        document.getElementById('ownerExists').addEventListener('change', function() {
+            let existantOwnerInput = document.getElementById('existantOwnerName');
+            let newOwnerName = document.getElementById('ownerName')
+            let cpf = document.getElementById('cpf')
+            let newOwnerBirth = document.getElementById('ownerBirth')
+            let labels = document.querySelectorAll('.new-label');
+            console.log(labels)
+
+            if (this.checked) {
+                existantOwnerInput.style.display = 'block';
+                newOwnerName.style.display = 'none';
+                cpf.style.display = 'none';
+                newOwnerBirth.style.display = 'none';
+                labels.forEach(label => label.style.display = 'none');
+            } else {
+                existantOwnerInput.style.display = 'none';
+                newOwnerName.style.display = 'block';
+                cpf.style.display = 'block';
+                newOwnerBirth.style.display = 'block';
+                labels.forEach(label => label.style.display = 'block');
+            }
+        });
+
+        function paginaAnterior() {
+            window.history.back();
+        }
+    </script>
 </body>
 </html>

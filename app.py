@@ -76,8 +76,11 @@ def adm_configs():
 def adm_exames():
     return render_template('adm-exames.html', user=username, privilegio=privilegio)
 
-@app.route('/novo-registro')
+@app.route('/novo-registro', methods=['GET', 'POST'])
 def adm_inputForm():
+    if request.method == 'POST':
+        return redirect(url_for('adm_petsData'))
+    
     return render_template('adm-inputForm.html', user=username, privilegio=privilegio)
 
 if __name__ == '__main__':
