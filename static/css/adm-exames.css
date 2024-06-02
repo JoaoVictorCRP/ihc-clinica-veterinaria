@@ -1,0 +1,31 @@
+.card {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.btn-success {
+    width: 100%;
+    max-width: 200px; /* Limita a largura do botão de agendar */
+}
+
+#newExamForm {
+    position: fixed;
+    bottom: 60%;
+    left: 41%;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    transform: translateY(-20px);
+    opacity: 0;
+}
+
+#newExamForm.show {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.ok-btn {
+    text-align: left;
+}
+
+.cancelar-btn {
+    text-align: right;
+}
