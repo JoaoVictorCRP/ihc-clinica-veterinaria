@@ -1,0 +1,24 @@
+form {
+    font-size: 26px;
+}
+
+.data-input {
+    font-size: 22px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button { /* Remove as setinhas do input de número */
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.actions {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 25px;
+}
+
+.actions button {
+    font-size: 25px;
+}

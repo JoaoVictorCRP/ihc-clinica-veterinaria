@@ -76,6 +76,9 @@ def adm_configs():
 def adm_exames():
     return render_template('adm-exames.html', user=username, privilegio=privilegio)
 
+@app.route('/novo-registro')
+def adm_inputForm():
+    return render_template('adm-inputForm.html', user=username, privilegio=privilegio)
 
 if __name__ == '__main__':
     app.run(debug=True)
