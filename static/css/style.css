@@ -88,6 +88,7 @@ p{
     z-index: 1001;
     right: 20px;
     min-width: calc(30%);
+    max-width: 300px;
     background-color: white;
     border: 1px solid #ccc;
     border-radius: 8px;

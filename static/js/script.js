@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function () {
       const msg = chatInput.value.trim();
       if (msg) {
         const msgElement = document.createElement('div');
-        msgElement.textContent = `Você: ${msg}`;
+        msgElement.innerHTML = `<b>Você:</b> ${msg}`;
         chatBody.appendChild(msgElement);
         chatInput.value = '';
         chatBody.scrollTop = chatBody.scrollHeight;
