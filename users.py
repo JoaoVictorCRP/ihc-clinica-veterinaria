@@ -13,4 +13,7 @@ usuarios = {
     'amanda.santos':['123', 'v'],
     'leticia.franca':['123','v']
 }
+
+for u in usuarios:
+    print(usuarios[u][1])
     

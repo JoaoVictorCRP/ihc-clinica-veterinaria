@@ -49,3 +49,7 @@
 .chat-form textarea {
     width: 100%;
 }
+
+.bot-msg {
+    color: darkblue;
+}

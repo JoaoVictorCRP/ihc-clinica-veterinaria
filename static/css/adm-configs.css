@@ -1,6 +1,5 @@
-/* Ajustes gerais para o layout da página de configurações */
 .container {
-    margin-left: 220px; /* Ajuste conforme a largura da sua sidebar */
+    margin-left: 220px;
     padding: 20px;
 }
 
@@ -22,7 +21,7 @@
 }
 
 /* Estilização da lista de usuários */
-.list-group-item {
+.config-item {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -70,4 +69,10 @@
     .container {
         margin-left: 0;
     }
+}
+
+.newUserForm {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }

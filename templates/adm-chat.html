@@ -14,6 +14,7 @@
 <body>
   {% include './contents/side-bar-adm.html' %}
 
+    <h1 class="text-center">Seu Chat</h1>
     <div class="container-fluid chat-container">
       <div class="row">
           <!-- Sidebar for chats -->
@@ -73,9 +74,11 @@
                       <h4>Gabriel Guedes</h4>
                   </div>
                   <div class="chat-messages p-4">
-                    <div><b>Bot: </b>Antes de começarmos seu atendimento, por favor, me informe seu nome</div>
-                    <div><b>Gabriel Guedes:</b> Gabriel Guedes</div>
-                    <div><b>Bot: </b>Ok, agora nos informe seu caso e a nossa atendente logo irá lhe responder! :)</div>
+                    <div class="bot-msg"><b>Bot: </b>Antes de começarmos seu atendimento, por favor, me informe seu CPF.</div>
+                    <div ><b>Gabriel Guedes:</b> 987.654.321-00</div>
+                    <div class="bot-msg"><b>Bot: </b>Não encontrei seu cadastro em nosso sistema. Por favor, diga seu nome para que seu atendimento possa ser inicializado.</div>
+                    <div><b>Gabriel Guedes:</b> Gabriel Guedes. </div>
+                    <div class="bot-msg"><b>Bot: </b>Ok, agora nos informe seu caso e a nossa atendente logo irá lhe responder! :)</div>
                     <div><b>Gabriel Guedes:</b> Meu pug não está nada bem... Está vomitando muito. </div>
                     <div><b>Gabriel Guedes:</b> Tem horário para hoje ainda?</div>
                       <!-- Mensagens aqui -->
