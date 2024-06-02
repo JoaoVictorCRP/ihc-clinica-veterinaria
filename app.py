@@ -52,8 +52,8 @@ def adm_chat():
 
 @app.route('/pets')
 def adm_petsData():
-    pets = pd.read_csv('./static/data/pets.csv') # Lendo csv de dados
-    pets = pets.to_dict(orient='records') # convertendo em lista de dicionários
+    pets = pd.read_csv('./static/data/pets.csv')
+    pets = pets.to_dict(orient='records') # Converte em lista de dicionários
 
     return render_template('adm-dataPets.html', user=username, pets=pets, privilegio=privilegio)
 

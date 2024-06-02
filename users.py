@@ -7,9 +7,10 @@
 # 'v' para veterinário
 
 usuarios = {
-    'yasmin.vitoria':['1234', 'a'],
-    'aline.takahashi':['1234', 'v'],
-    'amanda.santos':['1234', 'v'],
-    'leticia.franca':['1234','v']
+    'admin':['123', 'a'],
+    'yasmin.vitoria':['123', 'a'],
+    'aline.takahashi':['123', 'v'],
+    'amanda.santos':['123', 'v'],
+    'leticia.franca':['123','v']
 }
     

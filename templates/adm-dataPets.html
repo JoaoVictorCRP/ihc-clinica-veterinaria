@@ -14,61 +14,54 @@
 <body>
   {% include './contents/side-bar-adm.html' %}
 
-  <div class="container mt-5">
-    <h2 class="text-center mb-4">Pets Registrados</h2>
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">Pets Registrados</h2>
 
-      
-    <div class="text-center search-div">
-        <input type="text" class="text-center mb-4" placeholder="Buscar Pet" id="searchBox">
-        <div id="lupa" class="bg-primary">
-            <i class="fa fa-search" aria-hidden="true" ></i>
+
+        <div class="text-center search-div">
+            <input type="text" class="text-center mb-4" placeholder="Buscar Pet" id="searchBox">
+            <div id="lupa" class="bg-primary">
+                <i class="fa fa-search" aria-hidden="true" ></i>
+            </div>
         </div>
-    </div>
 
-    <div class="actions">
-        <button class="position-relative top-50 start-0 translate-middle btn btn-success" style="font-size: 22px;"> Novo Registro </button>
-        <button class="position-relative top-50 start-100 translate-middle btn btn-danger delete" style="font-size: 22px;">Deletar</button>
-    </div>
-    
-    <table class="table table-hover">
-        <thead>
-            <tr>
-                <th>Sel.</th>
-                <th>Nome</th>
-                <th>Raça</th>
-                <th>Cor</th>
-                <th>Porte</th>
-                <th>Dono(a)</th>
-                <th>Data de Nascimento</th>
-                <th>Ações</th>
-            </tr>
-        </thead>
-        <tbody>
+        <div class="actions">
+            <button class="position-relative top-50 start-0 translate-middle btn btn-success" style="font-size: 22px;"> Novo Registro </button>
+            <button class="position-relative top-50 start-100 translate-middle btn btn-danger delete" style="font-size: 22px;">Deletar</button>
+        </div>
 
-           {% for pet in pets %}
+        <table class="table table-hover">
+            <thead>
                 <tr>
-                    <td><input type="checkbox" style="width:60px; height:40px"></td>
-                    <td>{{ pet['Nome'] }}</td>
-                    <td>{{ pet['Raca'] }}</td>
-                    <td>{{ pet['Cor'] }}</td>
-                    <td>{{ pet['Porte'] }}</td>
-                    <td>{{ pet['Dono(a)'] }}</td>
-                    <td>{{ pet['Data_Nascimento'] }}</td>
-                    <td>
-                        <button class="btn btn-primary btn-sm me-2">Editar</button>
-                        <button class="btn btn-danger btn-sm">Excluir</button>
-                    </td>
+                    <th>Sel.</th>
+                    <th>Nome</th>
+                    <th>Raça</th>
+                    <th>Cor</th>
+                    <th>Porte</th>
+                    <th>Dono(a)</th>
+                    <th>Data de Nascimento</th>
+                    <th>Ações</th>
                 </tr>
-            {% endfor %}
-        </tbody>
-    </table>
-</div>
-          
+            </thead>
+            <tbody>
 
-          
-      </div>
-  </div>
-
-  <script src="./static/js/adm-bar.js"></script>
+            {% for pet in pets %}
+                    <tr>
+                        <td><input type="checkbox" style="width:60px; height:40px"></td>
+                        <td>{{ pet['Nome'] }}</td>
+                        <td>{{ pet['Raca'] }}</td>
+                        <td>{{ pet['Cor'] }}</td>
+                        <td>{{ pet['Porte'] }}</td>
+                        <td>{{ pet['Dono(a)'] }}</td>
+                        <td>{{ pet['Data_Nascimento'] }}</td>
+                        <td>
+                            <button class="btn btn-primary btn-sm me-2">Editar</button>
+                            <button class="btn btn-danger btn-sm">Excluir</button>
+                        </td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
 </body>
 </html>

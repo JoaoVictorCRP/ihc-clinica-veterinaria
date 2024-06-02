@@ -28,3 +28,9 @@ h2 a:hover {
     font-size: 0.9em;
     color: #000;
 }
+
+.dayname {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
