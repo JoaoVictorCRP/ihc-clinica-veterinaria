@@ -21,7 +21,7 @@
         <div class="container">
             <div class="row">
             
-            {% if privileio == 'Atendente' %}
+            {% if privilegio == 'Atendente' %}
 
               <div class="col" >
                   <a href="/chat" style="text-decoration: none;">
@@ -33,7 +33,7 @@
             {% else %}
 
                 <div class="col" >
-                    <a href="/chat" style="text-decoration: none;">
+                    <a href="/exames" style="text-decoration: none;">
                       <img src="./static/images/painel-adm/exames.png" width="250px" style="border: solid black 5px; border-radius:20px">
                       <p class="text-center text-danger"> <strong>3 Exames pendentes</strong> </p>
                     </a>

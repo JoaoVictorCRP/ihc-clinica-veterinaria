@@ -56,13 +56,21 @@
                     <td>{{ c['pets'] }}</td>
                     <td>{{ c['data_nascimento'] }}</td>
                     <td>
-                        <button class="btn btn-primary btn-sm me-2">Editar</button>
-                        <button class="btn btn-danger btn-sm">Excluir</button>
+                        <a href="/editar" style="text-decoration: none;">
+                            <button class="btn btn-primary btn-sm me-2">Editar</button>
+                        </a>
+                        <button class="btn btn-danger btn-sm" onclick="deleteData()">Excluir</button>
                     </td>
                 </tr>
             {% endfor %}
         </tbody>
     </table>
     </div>
+    <script>
+        function deleteData() {
+            console.log('oi')
+            confirm('Tem certeza que deseja excluir este registro?')
+        }
+    </script>
 </body>
 </html>

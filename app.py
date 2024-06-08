@@ -83,5 +83,12 @@ def adm_inputForm():
     
     return render_template('adm-inputForm.html', user=username, privilegio=privilegio)
 
+@app.route('/editar',  methods=['GET', 'POST'])
+def adm_editar():
+    if request.method == 'POST':
+        return redirect(url_for('adm_petsData'))
+    
+    return render_template('adm-editar.html', user=username, privilegio=privilegio)
+
 if __name__ == '__main__':
     app.run(debug=True)
